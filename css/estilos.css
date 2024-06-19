@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilos para la tabla en dispositivos grandes */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 3px solid darkblue;
+    margin: 20px auto;
+}
+
+th {
+    background-color:black;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid darkblue;
+}
+
+tr:nth-child(odd) {
+    background-color: aliceblue;
+}
+
+/* Media query para dispositivos con una resolución menor o igual a 1145 píxeles */
+@media (max-width: 1145px) {
+    /* Ocultar la tabla en dispositivos pequeños */
+    table {
+        display: none;
+    }
+}
+
+/* Estilos para las tarjetas en dispositivos pequeños */
+.tarjeta {
+    display: none; /* Ocultar las tarjetas en dispositivos grandes */
+    width: 80%; /* Ancho de la tarjeta */
+    margin: 20px auto; /* Margen para centrar las tarjetas */
+    border: 3px solid darkblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tarjeta h2 {
+    text-align: center;
+    color: darkblue;
+}
+
+.tarjeta p {
+    text-align: justify;
+    padding: 10px;
+}
+
+/* Media query para dispositivos con una resolución menor o igual a 1145 píxeles */
+@media (max-width: 1145px) {
+    /* Mostrar las tarjetas en dispositivos pequeños */
+    .tarjeta {
+        display: block;
+    }
+}
+
+/* Media query para dispositivos con una resolución mayor a 1145 píxeles */
+@media (min-width: 1146px) {
+    /* Ocultar las tarjetas en dispositivos grandes */
+    .tarjeta {
+        display: none;
+    }
+}
